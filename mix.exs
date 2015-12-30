@@ -7,7 +7,7 @@ defmodule GCM.Mixfile do
 
   def project do
     [app: :gcm,
-     version: "1.1.0",
+     version: "1.1.1",
      elixir: "~> 1.0",
      name: "GCM",
      build_embedded: Mix.env == :prod,
@@ -26,8 +26,7 @@ defmodule GCM.Mixfile do
     [{ :httpoison, "~> 0.8" },
      { :poison, "~> 1.5" },
      { :meck, "~> 0.8", only: :test},
-     { :earmark, "~> 0.1.17", only: :docs },
-     { :ex_doc, "~> 0.8.0", only: :docs }]
+    ]
   end
 
   defp package do
