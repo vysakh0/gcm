@@ -19,11 +19,11 @@ defmodule GCM.Mixfile do
   end
 
   def application do
-    [applications: [:httpoison]]
+    [applications: []]
   end
 
   defp deps do
-    [{ :httpoison, "~> 0.7" },
+    [{ :httpoison, "~> 0.8" },
      { :poison, "~> 1.5" },
      { :meck, "~> 0.8", only: :test},
      { :earmark, "~> 0.1.17", only: :docs },
